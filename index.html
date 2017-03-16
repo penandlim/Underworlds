@@ -1,15 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Underworlds</title>
-    <link href="style.css" rel="stylesheet" type="text/css" media="all">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Jongseung Lim" />
+    <meta name="description" content="Final Project for C LIT 250A Underworlds 2017" />
+    <meta name="keywords" content="underworlds" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />-->
+
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Underworlds" />
+    <meta property="og:description" content="Final Project for C LIT 250A Underworlds 2017" />
+    <meta property="og:type" content="website" />
+    <!--<meta property="og:image" content="http://nebez.github.io/floppybird/assets/thumb.png" />-->
+    <meta property="og:url" content="http://penandlim.github.io/Underworlds/" />
+    <meta property="og:site_name" content="Underworlds" />
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body>
-<h1 id="text" class="Absolute-Center"></h1>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.0/anime.min.js" integrity="sha256-Ua9yGhfKuHwvXnTpVHP7jBZUgsN1IaqkJBwaQrgsv8g=" crossorigin="anonymous"></script>
-<script src="code.js"></script>
-
+<div id="background"></div>
+<div id="overlay"></div>
+<div id="main">
+    <div id="text">Limited Access</div>
+</div>
+<div id="name">
+    <p>Wrong user soul. Please enter the correct birth name of the dead.</p>
+    <textarea title="name" cols="20" rows="1"></textarea>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/anime.min.js"></script>
+<script src="js/buzz.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

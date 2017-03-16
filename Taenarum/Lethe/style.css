@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'GlitchFont';
+    src: url("../../assets/Doppler.ttf") format('truetype');
+}
+
+html {
+    font-family: GlitchFont, Arial, sans-serif;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+body {
+    padding-bottom: 100px;
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.25),
+            rgba(255, 0, 0, 0.45)
+    );
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#overlay {
+    z-index: -10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-size: auto 100%;
+    opacity: 0.3;
+}
+
+.text {
+    height: auto;
+    text-align: center;
+    width: 900px;
+    padding: 70px;
+    margin: auto auto;
+    margin-top: 100px;
+    line-height: 2em;
+    font-size: 25pt;
+    color: black;
+    max-width: 900px;
+}
+
+#text {
+    text-align: center;
+    font-size: 18pt;
+    -webkit-text-stroke-fill: black;
+    -webkit-text-stroke-width: 0.3pt;
+    -webkit-text-stroke-color: white;
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+textarea {
+    margin-top: 20px;
+    width: 500px;
+    height: 50px;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.47);
+    border-color: -moz-use-text-color #FFFFFF #FFFFFF -moz-use-text-color;
+    border-image: none;
+    border-radius: 6px 6px 6px 6px;
+    border-style: none solid solid none;
+    border-width: medium 1px 1px medium;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+    color: #555555;
+    font-size: 1em;
+    font-family: Georgia, serif;
+    line-height: 1.4em;
+    text-align: center;
+    transition: background-color 0.2s ease 0s;
+    padding-top: auto;
+}
